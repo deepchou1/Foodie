@@ -1,0 +1,9 @@
+=border-radius($radius:5px)
+    border-radius: $radius
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+
+=mQ ($arg)
+    @media screen and (max-width : $arg)
+        @content;

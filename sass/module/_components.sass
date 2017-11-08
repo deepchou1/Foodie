@@ -1,0 +1,164 @@
+.banner-section
+    position: relative
+    height: 500px
+    color: $white
+    text-align: center
+    background:
+        image: url(../img/banner-bg.jpeg)
+        size: 100% auto
+        position: 100px left
+        repeat: no-repeat
+        attachment: fixed
+    +mQ (991px)
+        height: 400px
+    +mQ (767px)
+        background-size: 100% 100% 
+        height: 300px
+    .banner-opacity
+        background: rgba(230,162,49,.5)
+        width: 100%
+        height: 100%
+        padding: 55px 0 0 0
+        .container
+            height: 100%
+            h3
+                font-size: 60px
+                text-shadow: 3px 3px 2px #000
+                -moz-text-shadow: 3px 3px 2px #000
+                -webkit-text-shadow: 3px 3px 2px #000
+                +mQ (767px)
+                    font-size: 35px
+            p
+                margin: 20px 10%
+                +mQ (767px)
+                    margin: 10px 0
+                
+                
+                
+.today-special
+    background:
+        image: url(../img/special-bg.jpeg)
+        size: 100% 100%
+        position: top left
+        repeat: no-repeat
+    .col-md-8 
+        positio: relative
+        z-index: 2
+        .special-content
+            background: transparentize($white,0.2)
+            padding: 20px 5%
+    .col-md-4
+        position: relative
+        left: -50px
+        z-index: 1
+        +mQ (767px)
+            left: 0
+            order: 1
+        
+            
+            
+            
+.experience
+    .row
+        margin-top: 20px
+    .img-over
+        position: relative
+        img
+            height: 100%
+            width: 100%
+        .img-over-content
+            position: absolute
+            top: 0px
+            left: 0px
+            margin: 7%
+            width: 86%
+            height: 86%
+            padding: 10px
+            background: transparentize($white,0.2)
+            opacity: 0
+            transition: opacity 0.7s ease-in-out;
+            h3
+                font-size: 18px
+                +mQ (991px)
+                    font-size: 12px
+                +mQ (767px)
+                    font-size: 20px
+
+.img-over:hover .img-over-content
+    opacity: 1
+    
+
+    
+.amazing
+    background:
+        image: url(../img/amazing-bg.jpg)
+        size: 100% 100%
+        position: top left
+        repeat: no-repeat
+        attachment: fixed
+    .row
+        margin: 20px 0 0
+        +mQ (767px)
+            position: relative
+            margin: 0
+        .col-md-7
+            margin: 0 -110px 0 0
+            z-index: 1
+            +mQ (767px)
+                margin: 0
+                position: absolute
+                top: 0
+                left: 0
+                height: 300px
+        .mar-right
+            margin: 0 0 0 -110px
+            +mQ (767px)
+                margin: 0
+        .col-md-6
+            z-index: 2
+    .section-img img
+        height: auto
+        max-height: 350px
+        +mQ (767px)
+            height: 300px
+        
+    .section-details
+        background: transparentize($white, 0.2)
+        padding: 20px 4% 30px
+        h3
+            width: 100%
+            margin: 0 0 20px 0
+        .menu-list
+            li
+                margin: 0 0 7px 0
+                border-bottom: 1px dashed $primary-color
+                padding: 0 0 7px 0
+            li:last-child
+                margin: 0
+                padding: 0
+                border: none
+            i
+                vertical-align: middle
+                margin: 0 7px 0 0
+                color: $primary-color
+            .price
+                float: right
+        
+
+.download-app
+    img
+        max-height: 300px
+        width: auto
+    .download-detail
+        +mQ (767px)
+            text-align: center
+            margin-top: 20px
+        h2
+            font-size: 40px
+            margin-top: 20px
+            small
+                font-size: 20px
+        .download-btn
+            margin: 0 10px 10px
+            
+        
